@@ -10,10 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var jumps: [Jump] = []
     
+    @State private var number = ""
+    @State private var jumpPlace = ""
+    
     var body: some View {
         NavigationView {
-            List(jumps) { jump in
-                JumpItem(jump: jump)
+            VStack {
+                Form {
+                    // Form Fields Go Here
+                    TextField("Jump Number", text: $number)
+                    TextField("Place", text: $jumpPlace)
+                    Button(action: {
+                        print("hi")
+                    }) {
+                        Text("Add Jump")
+                    }
+                }
+                List(jumps) { jump in
+                    JumpItem(jump: jump)
+                }
             }
             .navigationBarTitle(Text("Jumps"))
         }
@@ -24,8 +39,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(jumps: testData)
+            .previewLayout(.device)
             .previewDevice("iPhone 11")
-            .preferredColorScheme(.dark)
     }
 }
 #endif
