@@ -13,6 +13,8 @@
 		1A6682C324A16A1E00B0CDAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6682C224A16A1E00B0CDAC /* Preview Assets.xcassets */; };
 		1A6682CE24A16A1E00B0CDAC /* TracerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6682CD24A16A1E00B0CDAC /* TracerTests.swift */; };
 		1A6682D924A16A1E00B0CDAC /* TracerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6682D824A16A1E00B0CDAC /* TracerUITests.swift */; };
+		1A6682E724A16EC000B0CDAC /* Jump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6682E624A16EC000B0CDAC /* Jump.swift */; };
+		1A6682E924A1761300B0CDAC /* JumpDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6682E824A1761300B0CDAC /* JumpDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		1A6682D424A16A1E00B0CDAC /* TracerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TracerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6682D824A16A1E00B0CDAC /* TracerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracerUITests.swift; sourceTree = "<group>"; };
 		1A6682DA24A16A1E00B0CDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6682E624A16EC000B0CDAC /* Jump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jump.swift; sourceTree = "<group>"; };
+		1A6682E824A1761300B0CDAC /* JumpDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				1A6682BF24A16A1E00B0CDAC /* Assets.xcassets */,
 				1A6682C424A16A1E00B0CDAC /* Info.plist */,
 				1A6682C124A16A1E00B0CDAC /* Preview Content */,
+				1A6682E624A16EC000B0CDAC /* Jump.swift */,
+				1A6682E824A1761300B0CDAC /* JumpDetail.swift */,
 			);
 			path = Tracer;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6682E724A16EC000B0CDAC /* Jump.swift in Sources */,
 				1A6682BE24A16A1D00B0CDAC /* ContentView.swift in Sources */,
+				1A6682E924A1761300B0CDAC /* JumpDetail.swift in Sources */,
 				1A6682BC24A16A1D00B0CDAC /* TracerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
